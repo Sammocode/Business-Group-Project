@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Purchase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<!-- Header and Navigation Menu (if needed) -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Keyboards</a>
+    <a href="#">Monitors</a>
+</nav>
+<!-- Keyboard Purchase Form -->
+<section class="purchase-form">
+    <h2>Keyboard Purchase</h2>
+    <form action="purchase_handler.php" method="post">
+        <label for="keyboard">Select a Keyboard:</label>
+        <select name="keyboard" id="keyboard">
+            <option value="razer-deathstalker-v2">Razer DeathStalker V2 Pro</option>
+            <option value="mx-mechanical">MX MECHANICAL</option>
+            <option value="apex-pro-tkl">Apex Pro TKL Wireless</option>
+            <option value="k100-rgb">K100 RGB Mechanical Gaming Keyboard</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" min="1" value="1">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="address">Shipping Address:</label>
+        <textarea name="address" id="address" rows="4" required></textarea>
+
+        <button class="purchase-button" onclick="redirectToThankYou()">Purchase</button>
+    </form>
+
+
+</section>
+
+<!-- Footer (if needed) -->
+<footer>
+    <p>&copy; 2023 Monitors & Keyboard Store. All rights reserved.</p>
+    <p>Address: 1234 Main Street, City, Country</p>
+    <p>Email: contact@monitorsandkeyboardstore.com</p>
+</footer>
+</body>
+
+</html>
+
